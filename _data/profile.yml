@@ -36,7 +36,7 @@ short_bio: >-
     I speak German, English and Spanish.
   </p>
 
-portrait_url: /assets/images/photos/julius.jpg
+portrait_url: /assets/images/photos/julius.jpg?v=2
 
 interests:
 - icon: fas fa-hand
