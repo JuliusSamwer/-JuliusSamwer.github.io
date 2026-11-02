@@ -1,0 +1,99 @@
+# Content for /cv. Taken from "CV - Julius Samwer (Updated Nov2026) FINAL.docx".
+# Bullets that still had placeholders in the CV ([N], [arm model], ...) are written without the missing specifics.
+
+education:
+- org: Cornell University, College of Arts &amp; Sciences
+  where: Ithaca, NY
+  when: Aug. 2023 – present
+  role: B.A., double major in Computer Science and Physics
+  bullets:
+  - >-
+    <b>Relevant coursework:</b> Robot Learning (CS 4756), Introduction to Robotics (CS 4750),
+    Introduction to Deep Learning (CS 4782), Introduction to Machine Learning (CS 3780),
+    Analysis of Algorithms (CS 4820), Systems (CS 3410), Data Structures (CS 3110),
+    Discrete Structures (CS 2800), Linear Algebra (MATH 2940)
+
+research:
+- org: GRILL Lab (Prof. Kuan Fang), Cornell University
+  where: Ithaca, NY
+  when: Mar. 2026 – present
+  role: Undergraduate Researcher
+  groups:
+  - title: >-
+      SpatialDex: 3D-grounded bimanual dexterity from RGB-only human videos
+      (<a href="https://arxiv.org/abs/2610.29716" target="_blank">arXiv 2026</a>, under review at ICRA 2027)
+    bullets:
+    - Designed bimanual dexterous manipulation tasks for real-world evaluation of a VLM-based visuomotor policy pre-trained on human video.
+    - Collected and processed data for policy training and evaluation.
+    - Ran evaluations in simulation and on the real bimanual system against π0.5 and other baselines.
+    - Debugged and maintained the bimanual dexterous-hand hardware stack (ROS 2) to keep real-robot experiments running.
+  - title: Motion-Conditioned Reinforcement Learning (project lead)
+    bullets:
+    - Leading a new lab project on motion-conditioned reinforcement learning for robot policies.
+- org: Milstein Summer Research Fellowship, Cornell University
+  where: Ithaca, NY
+  when: Summer 2026 – present
+  role: Independent researcher
+  groups:
+  - title: Zeus, abstracting and emergent hierarchical world models
+    bullets:
+    - Built a ladder of world-model planning experiments, from a flat latent model with sampling MPC to a two-level planner over learned macro-actions.
+    - Showed that with a fixed model and planning budget, flat planning success falls from 100% to 5% as the optimal path length grows from 2 to 12.
+    - Studying whether abstraction boundaries emerge at decision points under planning pressure, and extending the study to pixel-based JEPA world models.
+- org: Milstein Program, Cornell Tech
+  where: New York, NY
+  when: Jun. – Sep. 2024
+  role: Summer Scholar, Team Lead of an LLM-from-scratch project
+  bullets:
+  - Led the development of a decoder-only Transformer language model (about 10M parameters) from scratch in PyTorch, progressing from a bigram baseline to a multi-head-attention architecture.
+  - Managed the team and worked through the challenges of training on larger text datasets.
+
+teaching:
+- org: Teaching Assistant, CS 4750 Foundations of Robotics
+  where: Cornell University
+  when: Fall 2026
+  role: Instructor, Prof. Tapomayukh Bhattacharjee
+
+industry:
+- org: Stratif AI GmbH
+  where: Berlin, Germany
+  when: Jun. – Aug. 2025
+  role: Machine Learning Intern
+  bullets:
+  - Developed a full-stack internal retrieval-augmented generation (RAG) system connected to a large language model to streamline compliance workflows.
+  - Designed and built a platform to manage the internal compliance rule database and knowledge base.
+  - Integrated retrieval and ranking with the LLM and built interfaces for fast, reliable compliance lookup.
+- org: Entrix Energy
+  where: Munich, Germany
+  when: Apr. – Jun. 2025
+  role: Data Science Intern
+  bullets:
+  - Developed a forecasting model for the Frequency Containment Reserve (FCR) energy market.
+  - Designed, implemented and evaluated predictive algorithms and integrated the model into the data science team's workflow.
+- org: Marvel Fusion
+  where: Munich, Germany
+  when: Aug. – Nov. 2022
+  role: Data Research Analyst
+  bullets:
+  - Worked on data projection and analysis, and assisted with digital simulations of particle collisions and fusion reactions.
+
+awards:
+- org: Milstein Summer Research Fellowship, Cornell University
+  when: "2026"
+  role: $7,000 for independent research
+- org: Hunter R. Rawlings III Presidential Research Scholar
+  when: 2023 – 2025
+  role: One of 50 selected per class; up to $8,000 in research funding
+- org: Milstein Scholar in Technology &amp; Humanity
+  when: 2023 – present
+  role: One of 25 selected per class
+
+skills:
+- name: Programming
+  value: Python, C, Java, OCaml, JavaScript, RISC-V Assembly
+- name: ML &amp; Robotics
+  value: PyTorch, ROS 2, NumPy, Pandas, MuJoCo, Isaac Lab
+- name: Systems
+  value: Linux, Git, AWS, Docker
+- name: Languages
+  value: German (native), English (fluent), Spanish (proficient)

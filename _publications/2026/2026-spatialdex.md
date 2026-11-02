@@ -3,7 +3,7 @@ title:          "SpatialDex: Reconstruction-Augmented Visuomotor Pre-Training of
 date:           2026-10-30 00:01:00 -0400
 selected:       true
 pub:            "arXiv:2610.29716"
-pub_post:       ". Under review at ICRA 2027."
+pub_post:       ", under review at ICRA 2027"
 pub_date:       "2026"
 abstract: >-
   SpatialDex learns bimanual dexterity from RGB-only human videos by reconstructing scene geometry and hand motion and
@@ -19,6 +19,10 @@ authors:
   - Julius Samwer
   - Saleh Kalantari
   - Kuan Fang
+tags:
+  - label: Preprint
+    style: accent
+  - label: Under review
 links:
   Paper: https://arxiv.org/abs/2610.29716
   HTML: https://arxiv.org/html/2610.29716v1

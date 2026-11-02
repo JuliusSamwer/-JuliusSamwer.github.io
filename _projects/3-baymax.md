@@ -4,7 +4,10 @@ date:     2026-04-01
 order:    3
 pub:      "Milstein Program in Technology &amp; Humanity, junior project"
 pub_date: "2026"
-pub_last: ' <span class="badge badge-pill badge-publication badge-light">Code coming soon</span>'
+tags:
+  - label: Completed
+    style: green
+  - label: Code coming soon
 abstract: >-
   Can a consumer-grade robot arm learn pick-and-place faster by extending a small set of its own demonstrations with
   public datasets and simulation? I fine-tuned a SmolVLA vision-language-action policy on an SO-101 arm,

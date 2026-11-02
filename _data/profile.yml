@@ -13,6 +13,10 @@ github: JuliusSamwer
 # gscholar: your-scholar-id
 # linkedin: your-linkedin-id
 
+tagline: >-
+  Undergraduate Researcher, GRILL Lab<span class="dot">|</span>Cornell University<br>
+  B.A. Computer Science &amp; Physics, 2027
+
 short_bio_text_justify: false
 short_bio: >-
   <p>
@@ -24,54 +28,27 @@ short_bio: >-
   </p>
   <p>
     I am also interested in world models that plan over long horizons. As a Milstein Summer Research Fellow, I started
-    <a href="#projects">Zeus</a>, a project that studies whether hierarchical abstractions in world models can
+    <a href="/projects">Zeus</a>, a project that studies whether hierarchical abstractions in world models can
     <em>emerge</em> from planning pressure rather than being designed by hand.
   </p>
   <p>
     Before research I interned in machine learning and data science at Stratif AI, Entrix Energy and Marvel Fusion.
-    Outside the lab you will find me skiing, spending time with friends, or training in the gym and outdoors.
+    I speak German, English and Spanish.
   </p>
 
 portrait_url: /assets/images/photos/julius.jpg
 
-education:
-- name: Cornell University
-  logo: /assets/images/badges/cornell.png
-  position: >-
-    B.A. in Computer Science and Physics <br/>
-    College of Arts &amp; Sciences
-  date: Aug. 2023 – present
-
-experience:
-- name: GRILL Lab, Cornell University
-  logo: /assets/images/badges/cornell.png
-  position: Undergraduate Researcher (Prof. Kuan Fang)
-  date: Mar. 2026 – present
-- name: Cornell University
-  logo: /assets/images/badges/cornell.png
-  position: Teaching Assistant, CS 4750 Foundations of Robotics
-  date: Fall 2026
-- name: Stratif AI GmbH, Berlin
-  position: Machine Learning Intern
-  date: Jun. – Aug. 2025
-- name: Entrix Energy, Munich
-  position: Data Science Intern
-  date: Apr. – Jun. 2025
-- name: Milstein Program, Cornell Tech
-  logo: /assets/images/badges/cornell.png
-  position: Summer Scholar, team lead of an LLM-from-scratch project
-  date: Jun. – Sep. 2024
-- name: Marvel Fusion, Munich
-  position: Data Research Analyst
-  date: Aug. – Nov. 2022
-
-awards:
-- name: Milstein Summer Research Fellowship, Cornell University
-  date: 2026
-- name: Hunter R. Rawlings III Presidential Research Scholar (one of 50 per class)
-  date: 2023 – 2025
-- name: Milstein Scholar in Technology &amp; Humanity (one of 25 per class)
-  date: 2023 – present
+interests:
+- icon: fas fa-hand
+  name: Dexterous manipulation
+- icon: fas fa-robot
+  name: Robot learning
+- icon: fas fa-diagram-project
+  name: Hierarchical world models
+- icon: fas fa-route
+  name: Long-horizon planning
+- icon: fas fa-person-running
+  name: Reinforcement learning
 
 hobbies:
 - icon: fas fa-person-skiing

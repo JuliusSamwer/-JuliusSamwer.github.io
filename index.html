@@ -1,39 +1,51 @@
 ---
 layout: default
-title : Homepage
-navbar_title: Home
+title : About
+navbar_title: About
 ---
+{%- assign p = site.data.profile -%}
+<div class="page">
+    <header class="hero">
+        <img class="hero-photo" src="{{ p.portrait_url | relative_url }}" alt="Portrait of {{ p.primary_name }}">
+        <div>
+            <h1 class="hero-name">{{ p.primary_name }}</h1>
+            <div class="hero-role">
+                {{ p.tagline }}
+            </div>
+            <div class="pill-links">
+                <a class="pill" href="mailto:{{ p.email }}"><i class="far fa-envelope"></i> Email</a>
+                <a class="pill" href="https://github.com/{{ p.github }}" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+                <a class="pill pill-dark" href="{{ '/cv' | relative_url }}"><i class="far fa-file-lines"></i> CV</a>
+            </div>
+        </div>
+    </header>
 
-<div class="row">
-    <div class="col-lg-3 col-md-4">
-        {% include widgets/profile_card_mini.html %}
-    </div>
-    <div class="col-lg-9 col-md-8">
+    <section class="section">
+        <div class="section-label">About</div>
+        <div class="bio">{{ p.short_bio }}</div>
+    </section>
 
-        {% include widgets/profile_card_bio_only.html %}
+    <section class="section">
+        <div class="section-label">Research interests</div>
+        <div class="chips">
+            {% for r in p.interests %}<span class="chip"><i class="{{ r.icon }}"></i>{{ r.name }}</span>{% endfor %}
+        </div>
+    </section>
 
-        {% if site.data.display.homepage.show_news %}
-        {% assign count_news = site.news | size %}
-        {% if count_news > 0 %}
-        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
-        {% endif %}
-        {% endif %}
+    <section class="section">
+        <div class="section-label">News</div>
+        <ul class="news">
+            {% assign news = site.news | sort: "date" | reverse %}
+            {% for item in news limit: site.data.display.homepage.num_news %}
+            <li><span class="when">{{ item.date | date: "%b %Y" }}</span><span>{{ item.title }}</span></li>
+            {% endfor %}
+        </ul>
+    </section>
 
-        {% if site.data.display.homepage.show_selected_publications %}
-        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-        {%
-        include widgets/publication_card.html
-        publications=pubs
-        title='<i class="fas fa-file-lines"></i> Publications'
-        %}
-        {% endif %}
-
-        {% include widgets/projects_card.html %}
-
-        {% if site.data.display.homepage.show_experience %}
-            {% include widgets/experience_card.html %}
-        {% endif %}
-
-        {% include widgets/hobbies_card.html %}
-    </div>
+    <section class="section">
+        <div class="section-label">Outside the lab</div>
+        <div class="chips">
+            {% for h in p.hobbies %}<span class="chip"><i class="{{ h.icon }}"></i>{{ h.name }}</span>{% endfor %}
+        </div>
+    </section>
 </div>

@@ -1,0 +1,16 @@
+{%- assign e = include.entry -%}
+<div class="cv-entry">
+    <div class="cv-org">{{ e.org }}</div>
+    <div class="cv-when">{{ e.when }}</div>
+    {%- if e.role or e.where -%}
+    <div class="cv-role" style="grid-column: auto;">{{ e.role }}</div>
+    <div class="cv-where">{{ e.where }}</div>
+    {%- endif -%}
+    {%- if e.bullets -%}
+    <ul>{% for b in e.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+    {%- endif -%}
+    {%- for g in e.groups -%}
+    <div class="cv-sub">{{ g.title }}</div>
+    <ul>{% for b in g.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+    {%- endfor -%}
+</div>

@@ -1,8 +1,10 @@
 pages:
 # NOTE: `name` must match the `navbar_title` front matter of the page.
-- name: Home
+- name: About
   url: /
 - name: Publications
   url: /publications
 - name: Projects
   url: /projects
+- name: CV
+  url: /cv

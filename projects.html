@@ -3,12 +3,13 @@ layout: default
 title : Projects
 navbar_title: Projects
 ---
+<div class="page">
+    <h1 class="page-title">Projects</h1>
+    <p class="page-lead">What I am working on right now. Code and papers will follow as each project matures.</p>
 
-<h2 class="pt-4">Current &amp; Recent Projects</h2>
-<p class="text-muted">Ongoing work. Code and papers will be released as each project matures.</p>
-<div class="my-0 p-0 bg-white shadow-sm rounded-xl">
     {% assign projects = site.projects | sort: "order" %}
-    {% for item in projects %}
-        {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
-    {% endfor %}
+    <section class="section">
+        <div class="section-label">Current &amp; recent</div>
+        {% for item in projects %}{% include widgets/work_item.html item=item %}{% endfor %}
+    </section>
 </div>

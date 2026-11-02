@@ -1,0 +1,37 @@
+{%- assign item = include.item -%}
+<article class="work">
+    <div class="work-media">
+        {%- if item.cover -%}
+        <img src="{{ item.cover | relative_url }}" alt="{{ item.title | strip_html }}" loading="lazy">
+        {%- else -%}
+        <div class="placeholder"><i class="{{ item.placeholder_icon | default: 'fas fa-flask' }}"></i>{{ item.placeholder_text | default: 'Coming soon' }}</div>
+        {%- endif -%}
+    </div>
+    <div class="work-body">
+        {%- if item.tags -%}
+        <div class="tags">
+            {%- for t in item.tags -%}
+            <span class="tag {% if t.style %}tag-{{ t.style }}{% endif %}">{{ t.label }}</span>
+            {%- endfor -%}
+        </div>
+        {%- endif -%}
+        <h3 class="work-title">{{ item.title }}</h3>
+        {%- if item.authors -%}
+        <div class="work-authors">{% include widgets/author_list.html authors=item.authors %}</div>
+        {%- endif -%}
+        <div class="work-venue">{{ item.pub_pre }}{{ item.pub }}{{ item.pub_post }}{% if item.pub_date %} · {{ item.pub_date }}{% endif %}</div>
+        <div class="work-abstract">{{ item.abstract }}</div>
+        {%- if item.links -%}
+        <div class="pill-links">
+            {%- for link in item.links -%}
+            {%- assign href = link[1] -%}
+            {%- if href contains '://' -%}
+            <a class="pill" href="{{ href }}" target="_blank" rel="noopener">{{ link[0] }} <i class="fas fa-arrow-up-right-from-square"></i></a>
+            {%- else -%}
+            <a class="pill" href="{{ href | relative_url }}">{{ link[0] }} <i class="fas fa-arrow-right"></i></a>
+            {%- endif -%}
+            {%- endfor -%}
+        </div>
+        {%- endif -%}
+    </div>
+</article>

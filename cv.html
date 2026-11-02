@@ -1,0 +1,63 @@
+---
+layout: default
+title : CV
+navbar_title: CV
+---
+{%- assign cv = site.data.cv -%}
+<div class="page">
+    <h1 class="page-title">Curriculum Vitae</h1>
+    <p class="page-lead">Robot learning and world models. Cornell University, Computer Science and Physics.</p>
+    <div class="pill-links mt-3">
+        <a class="pill" href="mailto:{{ site.data.profile.email }}"><i class="far fa-envelope"></i> {{ site.data.profile.email }}</a>
+        <a class="pill" href="https://github.com/{{ site.data.profile.github }}" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        {%- if site.data.profile.cv_link -%}
+        <a class="pill pill-dark" href="{{ site.data.profile.cv_link | relative_url }}" target="_blank"><i class="fas fa-download"></i> PDF</a>
+        {%- endif -%}
+    </div>
+
+    <section class="section">
+        <div class="section-label">Education</div>
+        {% for e in cv.education %}{% include widgets/cv_entry.html entry=e %}{% endfor %}
+    </section>
+
+    <section class="section">
+        <div class="section-label">Publications</div>
+        {% assign pubs = site.publications | sort: "date" | reverse %}
+        {% for p in pubs %}
+        <div class="cv-entry">
+            <div style="grid-column: 1 / -1;">
+                <div class="cv-org" style="font-weight:600;">{{ p.title }}</div>
+                <div class="work-authors mt-1">{% include widgets/author_list.html authors=p.authors %}</div>
+                <div class="work-venue mb-0">{{ p.pub_pre }}{{ p.pub }}{{ p.pub_post }} · {{ p.pub_date }}</div>
+            </div>
+        </div>
+        {% endfor %}
+    </section>
+
+    <section class="section">
+        <div class="section-label">Research Experience</div>
+        {% for e in cv.research %}{% include widgets/cv_entry.html entry=e %}{% endfor %}
+    </section>
+
+    <section class="section">
+        <div class="section-label">Teaching</div>
+        {% for e in cv.teaching %}{% include widgets/cv_entry.html entry=e %}{% endfor %}
+    </section>
+
+    <section class="section">
+        <div class="section-label">Industry Experience</div>
+        {% for e in cv.industry %}{% include widgets/cv_entry.html entry=e %}{% endfor %}
+    </section>
+
+    <section class="section">
+        <div class="section-label">Honors &amp; Awards</div>
+        {% for e in cv.awards %}{% include widgets/cv_entry.html entry=e %}{% endfor %}
+    </section>
+
+    <section class="section">
+        <div class="section-label">Skills</div>
+        <dl class="cv-skills">
+            {% for s in cv.skills %}<dt>{{ s.name }}</dt><dd>{{ s.value }}</dd>{% endfor %}
+        </dl>
+    </section>
+</div>
