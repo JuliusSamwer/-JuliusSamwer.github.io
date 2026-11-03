@@ -16,5 +16,5 @@ cover:    /assets/images/covers/baymax.png
 authors:
   - Julius Samwer
 links:
-  Interactive Demo Page: /demos/baymax/?v=2
+  Interactive Demo Page: /demos/baymax/
 ---
