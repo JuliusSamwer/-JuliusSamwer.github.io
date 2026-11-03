@@ -41,16 +41,18 @@ short_bio: >-
 portrait_url: /assets/images/photos/julius.jpg?v=2
 
 interests:
-- icon: fas fa-hand
-  name: Dexterous manipulation
 - icon: fas fa-robot
   name: Robot learning
-- icon: fas fa-diagram-project
-  name: Hierarchical world models
 - icon: fas fa-route
   name: Long-horizon planning
+- icon: fas fa-diagram-project
+  name: Hierarchical world models
 - icon: fas fa-person-running
   name: Reinforcement learning
+- icon: fas fa-brain
+  name: Embodied AI
+- icon: fas fa-hand
+  name: Dexterous manipulation
 
 hobbies:
 - icon: fas fa-person-skiing
