@@ -1,17 +1,17 @@
-# Content for /cv. Taken from "CV - Julius Samwer (Updated Nov2026) FINAL.docx".
-# Bullets that still had placeholders in the CV ([N], [arm model], ...) are written without the missing specifics.
+# Content for /cv. Taken from "CV - Julius Samwer ( Nov2026) FINAL.docx" (PDF: /assets/files/Julius_Samwer_CV.pdf).
 
 education:
 - org: Cornell University, College of Arts &amp; Sciences
   where: Ithaca, NY
-  when: Aug. 2023 – present
-  role: B.A., double major in Computer Science and Physics
+  when: Aug. 2023 – May 2027 (expected)
+  role: B.A., major in Computer Science, minors in Physics and Math
   bullets:
   - >-
-    <b>Relevant coursework:</b> Robot Learning (CS 4756), Introduction to Robotics (CS 4750),
-    Introduction to Deep Learning (CS 4782), Introduction to Machine Learning (CS 3780),
-    Analysis of Algorithms (CS 4820), Systems (CS 3410), Data Structures (CS 3110),
-    Discrete Structures (CS 2800), Linear Algebra (MATH 2940)
+    <b>Relevant coursework (4000-level CS GPA: 3.82):</b> Introduction to Deep Learning (CS 4782),
+    Robot Learning (CS 4756), Foundations of Robotics (CS 4750), Introduction to Computer Vision (CS 4670),
+    Analysis of Algorithms (CS 4820), Practicum in Artificial Intelligence (CS 4701),
+    Introduction to Machine Learning (CS 3780), Discrete Structures (CS 2800),
+    Data Structures and Functional Programming (CS 3110), Systems (CS 3410)
 
 research:
 - org: GRILL Lab (Prof. Kuan Fang), Cornell University
@@ -24,58 +24,66 @@ research:
       (<a href="https://arxiv.org/abs/2610.29716" target="_blank">arXiv 2026</a>, under review at ICRA 2027)
     bullets:
     - Designed bimanual dexterous manipulation tasks for real-world evaluation of a VLM-based visuomotor policy pre-trained on human video.
-    - Collected and processed data for policy training and evaluation.
-    - Ran evaluations in simulation and on the real bimanual system against π0.5 and other baselines.
-    - Debugged and maintained the bimanual dexterous-hand hardware stack (ROS 2) to keep real-robot experiments running.
-  - title: Motion-Conditioned Reinforcement Learning (project lead)
+    - Collected and processed 250 episodes of bimanual teleoperation data, and processed and annotated episodes for the training pipeline.
+    - Evaluated models in simulation and on the real bimanual system against π0.5, GeoVLA and other baselines.
+    - Maintained and debugged the dexterous-hand hardware stack (Tianji arms, Wuji hands, RGB-D camera setup), resolving control and teleoperation issues.
+  - title: Motion-Grounded Reinforcement Learning (project lead, target IROS / CoRL 2027)
     bullets:
-    - Leading a new lab project on motion-conditioned reinforcement learning for robot policies.
+    - Leading a new project on leveraging object motion trajectories for goal-conditioned RL.
+    - Designed the experiment and reward and stabilized training at scale on a GPU cluster, with the policy reaching about 80% task success.
+    - This is the base for residual-RL fine-tuning, multi-task generalization and compositional task understanding.
 - org: Milstein Summer Research Fellowship, Cornell University
   where: Ithaca, NY
-  when: Summer 2026 – present
+  when: Jun. 2026 – present
   role: Independent researcher
   groups:
-  - title: Zeus, abstracting and emergent hierarchical world models
+  - title: >-
+      <a href="https://github.com/JuliusSamwer/echo" target="_blank">ECHO</a>, closed-loop hierarchical latent world models
     bullets:
-    - Built a ladder of world-model planning experiments, from a flat latent model with sampling MPC to a two-level planner over learned macro-actions.
-    - Showed that with a fixed model and planning budget, flat planning success falls from 100% to 5% as the optimal path length grows from 2 to 12.
-    - Studying whether abstraction boundaries emerge at decision points under planning pressure, and extending the study to pixel-based JEPA world models.
+    - Awarded the Junior Summer Fellowship for self-directed research on hierarchical latent world models.
+    - Built a closed-loop hierarchical world model that feeds low-level planning error back to the high level.
+    - Engineered a reachability signal and more than doubled long-horizon success (0.38 → 0.87) in controlled experiments.
 - org: Milstein Program, Cornell Tech
   where: New York, NY
   when: Jun. – Sep. 2024
   role: Summer Scholar, Team Lead of an LLM-from-scratch project
   bullets:
   - Led the development of a decoder-only Transformer language model (about 10M parameters) from scratch in PyTorch, progressing from a bigram baseline to a multi-head-attention architecture.
-  - Managed the team and worked through the challenges of training on larger text datasets.
 
 teaching:
 - org: Teaching Assistant, CS 4750 Foundations of Robotics
   where: Cornell University
   when: Fall 2026
   role: Instructor, Prof. Tapomayukh Bhattacharjee
+  bullets:
+  - Grading, holding weekly office hours and helping students with the material.
+  - Testing and improving homework assignments and quizzes.
 
 industry:
-- org: Stratif AI GmbH
-  where: Berlin, Germany
-  when: Jun. – Aug. 2025
-  role: Machine Learning Intern
-  bullets:
-  - Developed a full-stack internal retrieval-augmented generation (RAG) system connected to a large language model to streamline compliance workflows.
-  - Designed and built a platform to manage the internal compliance rule database and knowledge base.
-  - Integrated retrieval and ranking with the LLM and built interfaces for fast, reliable compliance lookup.
 - org: Entrix Energy
   where: Munich, Germany
   when: Apr. – Jun. 2025
   role: Data Science Intern
   bullets:
   - Developed a forecasting model for the Frequency Containment Reserve (FCR) energy market.
-  - Designed, implemented and evaluated predictive algorithms and integrated the model into the data science team's workflow.
+  - Designed, implemented and evaluated predictive algorithms to improve market forecasting accuracy.
+  - Integrated the model into the data science team's workflow to support data-driven decision-making.
+- org: Stratif AI GmbH
+  where: Berlin, Germany
+  when: Jun. – Aug. 2025
+  role: Machine Learning Intern
+  bullets:
+  - Developed a full-stack internal retrieval-augmented generation (RAG) system connected to an LLM to streamline compliance workflows.
+  - Designed and built a platform to manage the internal compliance rule database and knowledge base.
+  - Integrated retrieval and ranking with the LLM and implemented user-friendly interfaces.
+  - Tested and deployed the system across all company teams.
 - org: Marvel Fusion
   where: Munich, Germany
   when: Aug. – Nov. 2022
   role: Data Research Analyst
   bullets:
-  - Worked on data projection and analysis, and assisted with digital simulations of particle collisions and fusion reactions.
+  - Worked as a research analyst on data projection and analysis.
+  - Assisted with the development of digital simulations of particle collisions and fusion reactions.
 
 awards:
 - org: Milstein Summer Research Fellowship, Cornell University
@@ -83,7 +91,7 @@ awards:
   role: $7,000 for independent research
 - org: Hunter R. Rawlings III Presidential Research Scholar
   when: 2023 – 2025
-  role: One of 50 selected per class; up to $8,000 in research funding
+  role: One of 50 selected per class; up to $8,000 in independent research funding
 - org: Milstein Scholar in Technology &amp; Humanity
   when: 2023 – present
   role: One of 25 selected per class
@@ -92,7 +100,7 @@ skills:
 - name: Programming
   value: Python, C, Java, OCaml, JavaScript, RISC-V Assembly
 - name: ML &amp; Robotics
-  value: PyTorch, ROS 2, NumPy, Pandas, MuJoCo, Isaac Lab
+  value: PyTorch, ROS 2, NumPy, Pandas, MuJoCo, Isaac Lab, CUDA
 - name: Systems
   value: Linux, Git, AWS, Docker
 - name: Languages

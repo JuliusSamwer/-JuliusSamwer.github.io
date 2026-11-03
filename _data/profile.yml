@@ -8,32 +8,34 @@ positions:
   logo: /assets/images/badges/cornell.png
 
 email: "julius.samwer@gmail.com"
-# cv_link: /assets/files/cv.pdf
+cv_link: /assets/files/Julius_Samwer_CV.pdf
 github: JuliusSamwer
 # gscholar: your-scholar-id
 # linkedin: your-linkedin-id
 
 tagline: >-
   Undergraduate Researcher, GRILL Lab<span class="dot">|</span>Cornell University<br>
-  B.A. Computer Science &amp; Physics, 2027
+  B.A. Computer Science, minors in Physics &amp; Math, 2027
 
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a senior at <a href="https://www.cornell.edu/" target="_blank">Cornell University</a>, double majoring in
-    Computer Science and Physics. I work on robot learning in the
+    I am a senior at <a href="https://www.cornell.edu/" target="_blank">Cornell University</a>, majoring in
+    Computer Science with minors in Physics and Math. I work on robot learning in the
     GRILL lab with Prof. Kuan Fang, where I contributed to
     <a href="https://spatialdex.github.io/" target="_blank">SpatialDex</a>, a framework that learns
-    bimanual dexterity from RGB-only human videos, and now lead a new project on motion-conditioned reinforcement learning.
+    bimanual dexterity from RGB-only human videos, and now lead a project on motion-grounded reinforcement learning:
+    a policy that learns to follow an object's reference trajectory from a demonstration.
   </p>
   <p>
     I am also interested in world models that plan over long horizons. As a Milstein Summer Research Fellow, I started
-    <a href="/projects">Zeus</a>, a project that studies whether hierarchical abstractions in world models can
-    <em>emerge</em> from planning pressure rather than being designed by hand.
+    <a href="https://github.com/JuliusSamwer/echo" target="_blank">ECHO</a>, a closed-loop hierarchical world model
+    that feeds low-level planning error back to the high level, which more than doubled long-horizon success
+    (0.38 → 0.87) in controlled experiments. This fall I am a TA for CS 4750 Foundations of Robotics.
   </p>
   <p>
     Before research I interned in machine learning and data science at Stratif AI, Entrix Energy and Marvel Fusion.
-    I speak German, English and Spanish.
+    In my free time I ski, play tennis and chess, go running and cycling, and spend time with friends.
   </p>
 
 portrait_url: /assets/images/photos/julius.jpg?v=2
@@ -53,7 +55,13 @@ interests:
 hobbies:
 - icon: fas fa-person-skiing
   name: Skiing
-- icon: fas fa-dumbbell
-  name: Strength training &amp; fitness
+- icon: fas fa-table-tennis-paddle-ball
+  name: Tennis
+- icon: fas fa-person-running
+  name: Running
+- icon: fas fa-person-biking
+  name: Cycling
+- icon: fas fa-chess-knight
+  name: Chess
 - icon: fas fa-user-group
   name: Time with friends

@@ -16,6 +16,9 @@ navbar_title: About
                 <a class="pill" href="mailto:{{ p.email }}"><i class="far fa-envelope"></i> Email</a>
                 <a class="pill" href="https://github.com/{{ p.github }}" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
                 <a class="pill pill-dark" href="{{ '/cv' | relative_url }}"><i class="far fa-file-lines"></i> CV</a>
+                {%- if p.cv_link -%}
+                <a class="pill" href="{{ p.cv_link | relative_url }}" target="_blank"><i class="fas fa-download"></i> CV (PDF)</a>
+                {%- endif -%}
             </div>
         </div>
     </header>

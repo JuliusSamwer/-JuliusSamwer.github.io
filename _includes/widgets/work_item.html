@@ -1,7 +1,9 @@
 {%- assign item = include.item -%}
 <article class="work">
     <div class="work-media">
-        {%- if item.cover -%}
+        {%- if item.cover_video -%}
+        <video src="{{ item.cover_video | relative_url }}"{% if item.cover %} poster="{{ item.cover | relative_url }}"{% endif %} autoplay muted loop playsinline preload="metadata" aria-label="{{ item.title | strip_html }}"></video>
+        {%- elsif item.cover -%}
         <img src="{{ item.cover | relative_url }}" alt="{{ item.title | strip_html }}" loading="lazy">
         {%- else -%}
         <div class="placeholder"><i class="{{ item.placeholder_icon | default: 'fas fa-flask' }}"></i>{{ item.placeholder_text | default: 'Coming soon' }}</div>
