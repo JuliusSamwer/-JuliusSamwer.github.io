@@ -9,10 +9,12 @@ tags:
     style: green
   - label: Code coming soon
 abstract: >-
-  Can a consumer-grade robot arm learn pick-and-place faster by extending a small set of its own demonstrations with
-  public datasets and simulation? I fine-tuned a SmolVLA vision-language-action policy on an SO-101 arm,
-  combining community SO-100/SO-101 teleoperation data with domain-randomized episodes from NVIDIA Isaac Lab.
-cover:    /assets/images/covers/baymax.png
+  <p>Teaching a robot arm a new task usually means recording hundreds of demonstrations by hand. Can practice in
+  simulation replace most of them? I pretrained a SmolVLA vision-language-action policy on pick-and-place runs in a
+  virtual copy of an SO-101 arm and table in NVIDIA Isaac Lab, randomizing lighting, colors, cube position, weight and
+  friction on every run, and then fine-tuned it on a small set of teleoperated demos on the real arm.</p>
+  <p>A policy trained only in simulation fails on the real arm (under 5% success). Used as a head start, sim
+  pretraining reaches the same success rate as training from scratch with far fewer real demos.</p>
 authors:
   - Julius Samwer
 links:
