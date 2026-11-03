@@ -5,6 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ page.title }} - {{ site.data.profile.navbar_name }}</title>
+    <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | replace: '.html', '' | absolute_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ page.title }} - {{ site.data.profile.navbar_name }}">
+    <meta property="og:url" content="{{ page.url | replace: 'index.html', '' | replace: '.html', '' | absolute_url }}">
+    <meta property="og:image" content="{{ site.data.profile.portrait_url | split: '?' | first | absolute_url }}">
+    {%- if page.url == '/' %}
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Person","name":"{{ site.data.profile.primary_name }}","url":"{{ site.url }}/",
+     "image":"{{ site.data.profile.portrait_url | split: '?' | first | absolute_url }}","jobTitle":"Undergraduate Researcher",
+     "affiliation":{"@type":"CollegeOrUniversity","name":"Cornell University"},
+     "sameAs":["https://github.com/{{ site.data.profile.github }}","https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}"]}
+    </script>
+    {%- endif %}
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
