@@ -10,6 +10,9 @@ navbar_title: CV
     <div class="pill-links mt-3">
         <a class="pill" href="mailto:{{ site.data.profile.email }}"><i class="far fa-envelope"></i> {{ site.data.profile.email }}</a>
         <a class="pill" href="https://github.com/{{ site.data.profile.github }}" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
+        {%- if site.data.profile.gscholar %}
+        <a class="pill" href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}" target="_blank" rel="noopener"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+        {%- endif %}
         {%- if site.data.profile.cv_link -%}
         <a class="pill pill-dark" href="{{ site.data.profile.cv_link | relative_url }}" target="_blank"><i class="fas fa-download"></i> PDF</a>
         {%- endif -%}
