@@ -15,9 +15,8 @@ abstract: >-
   <p>Motion-conditioned RL specifies a manipulation task by a reference object trajectory taken from a demonstration.
   A point-cloud policy learns through reinforcement learning to follow that trajectory, here for robotic insertion
   in simulation.</p>
-  <p>I designed the task formulation and a path-progress reward that keeps the policy on the demonstrated motion and
-  lets it recover when it drifts. Starting from a grasped object, the policy follows about 80% of the reference
-  motion per episode (video).</p>
+  <p>Using a path-progress reward, we show that the policy recovers from drift off the demonstrated path and, starting
+  from a grasped object, completes about 80% of the reference motion per episode (video).</p>
   <p>Next is residual RL on top of a pretrained policy, a step towards goal-conditioned RL for generalist robot
   policies and compositional skill learning.</p>
 authors:
