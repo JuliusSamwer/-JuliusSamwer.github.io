@@ -15,10 +15,10 @@ abstract: >-
   friction on every run, and then fine-tuned it on a small set of teleoperated demos on the real arm.</p>
   <p>A policy trained only in simulation fails on the real arm (under 5% success). Used as a head start, sim
   pretraining reaches the same success rate as training from scratch with far fewer real demos.</p>
-cover_video: /assets/videos/baymax_sim.mp4
-cover:    /assets/images/covers/baymax_sim.jpg
+cover_video: /assets/videos/simreal_sim.mp4
+cover:    /assets/images/covers/simreal_sim.jpg
 authors:
   - Julius Samwer
 links:
-  Interactive Demo Page: /demos/baymax/
+  Interactive Demo Page: /demos/simreal/
 ---
