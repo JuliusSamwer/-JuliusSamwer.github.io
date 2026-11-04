@@ -8,7 +8,7 @@ navbar_title: About
     <header class="hero">
         <img class="hero-photo" src="{{ p.portrait_url | relative_url }}" alt="Portrait of {{ p.primary_name }}">
         <div>
-            <h1 class="hero-name">{{ p.primary_name }}</h1>
+            <h1 class="hero-name">{{ p.primary_name }}<img class="hero-logo" src="{{ '/assets/images/badges/cornell.png' | relative_url }}" alt="Cornell University" title="Cornell University"></h1>
             <div class="hero-role">
                 {{ p.tagline }}
             </div>

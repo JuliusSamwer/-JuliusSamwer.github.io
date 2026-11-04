@@ -99,6 +99,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--ink); letter-spacing: -0.01em; }
     line-height: 1.1;
     margin-bottom: 0.4rem;
 }
+.hero-logo { height: 0.95em; width: auto; margin-left: 0.4em; vertical-align: -0.08em; }
 .hero-role { color: var(--ink-2); font-size: 1.05rem; line-height: 1.55; margin-bottom: 1.2rem; }
 .hero-role .dot { color: var(--line); margin: 0 0.4rem; }
 
