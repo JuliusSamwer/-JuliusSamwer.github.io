@@ -120,6 +120,8 @@ h1, h2, h3, h4, h5, h6 { color: var(--ink); letter-spacing: -0.01em; }
 .pill:hover { border-color: #cfd2d9; box-shadow: 0 4px 12px rgba(20, 24, 33, 0.06); transform: translateY(-1px); }
 .pill.pill-dark { background: var(--ink); border-color: var(--ink); color: #fff !important; }
 .pill i { font-size: 0.95em; opacity: 0.85; }
+.pill.pill-icon { padding: 0.38rem 0.6rem; }
+.pill.pill-icon i { font-size: 1.05em; opacity: 1; width: 1.1em; text-align: center; }
 
 .bio p { font-size: 1.06rem; color: #2a2e36; margin-bottom: 1.1rem; max-width: 760px; }
 

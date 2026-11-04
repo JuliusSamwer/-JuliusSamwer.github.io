@@ -16,7 +16,7 @@
     {"@context":"https://schema.org","@type":"Person","name":"{{ site.data.profile.primary_name }}","url":"{{ site.url }}/",
      "image":"{{ site.data.profile.portrait_url | split: '?' | first | absolute_url }}","jobTitle":"Undergraduate Researcher",
      "affiliation":{"@type":"CollegeOrUniversity","name":"Cornell University"},
-     "sameAs":["https://github.com/{{ site.data.profile.github }}","https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}"]}
+     "sameAs":["https://github.com/{{ site.data.profile.github }}","https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}","https://www.linkedin.com/in/{{ site.data.profile.linkedin }}/"]}
     </script>
     {%- endif %}
 
