@@ -10,7 +10,7 @@ Source for my academic homepage, built with Jekyll on top of the
 | Name, bio, links, education, experience, awards, hobbies | `_data/profile.yml` |
 | News items | `_news/*.md` |
 | Publications | `_publications/<year>/*.md` |
-| Projects (Motion-conditioned RL, ECHO, Teaching Robots to Adapt) | `_projects/*.md` |
+| Projects (Motion-conditioned RL, ECHO, Simulation Pretraining) | `_projects/*.md` |
 | SimReal interactive demo (prebuilt Vite app) | `demos/simreal/` |
 
 ## Run locally
